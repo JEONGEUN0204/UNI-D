@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_burgerin.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_cau.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_check.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_comment_write.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_ddo.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_find.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_hanip.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_home.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_join.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_koreanfood.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_miho.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_mypage.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_skku.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_smw.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_sook.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_ssang.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/activity_theham.xml" value="0.1" />
-        <entry key="..\:/Users/82107/AndroidStudioProjects/team13/Hackathon_team13/android/InitScreen/app/src/main/res/layout/restaurant_list.xml" value="0.1" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/drawable/btn_style.xml" value="0.1" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/font/font.xml" value="0.11770833333333333" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_check.xml" value="0.22" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_check2.xml" value="0.1" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_find.xml" value="0.22" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_join.xml" value="0.22" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/wjddm/androidProjects/InitScreen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11614583333333334" />
-        <entry key="..\:/Users/wjddm/hackathon/android/InitScreen/app/src/main/res/layout/activity_find.xml" value="0.22" />
-        <entry key="..\:/Users/wjddm/hackathon/android/InitScreen/app/src/main/res/layout/activity_login.xml" value="0.1" />
-      </map>
-    </option>
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

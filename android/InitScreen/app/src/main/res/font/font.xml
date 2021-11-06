@@ -4,4 +4,12 @@
         android:fontStyle = "normal"
         android:fontWeight = "400"
         android:font = "@font/dohyeonregular"/>
+    <font
+        android:fontStyle = "normal"
+        android:fontWeight = "400"
+        android:font = "@font/store_name"/>
+    <font
+        android:fontStyle = "normal"
+        android:fontWeight = "400"
+        android:font = "@font/store_detail"/>
 </font-family>

@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+        binding.nologinBtn.setOnClickListener {
+            val intent=Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 

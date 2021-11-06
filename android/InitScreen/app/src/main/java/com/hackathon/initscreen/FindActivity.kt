@@ -1,5 +1,6 @@
 package com.hackathon.initscreen
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -19,6 +20,14 @@ class FindActivity : AppCompatActivity() {
         }
         binding.pwFindBtn.setOnClickListener {
             Toast.makeText(this@FindActivity,"비밀번호가 전송되었습니다.",Toast.LENGTH_SHORT).show()
+        }
+        binding.loginpageBtn.setOnClickListener {
+            val intent= Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
+        binding.loginpageBtn2.setOnClickListener {
+            val intent= Intent(this,LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

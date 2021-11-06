@@ -14,7 +14,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.loginpageBtn.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            //메인화면으로
+            val intent=Intent(this,HomeActivity::class.java)
             startActivity(intent)
         }
 
