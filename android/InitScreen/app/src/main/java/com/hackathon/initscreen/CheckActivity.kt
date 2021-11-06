@@ -2,13 +2,16 @@ package com.hackathon.initscreen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_check.*
+import com.hackathon.initscreen.databinding.ActivityCheckBinding
 
 class CheckActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCheckBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_check)
+        binding = ActivityCheckBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        check_btn.setOnClickListener {  }
+        binding.checkBtn.setOnClickListener {  }
     }
 }

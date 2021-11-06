@@ -3,18 +3,25 @@ package com.hackathon.initscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
+import com.hackathon.initscreen.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        join_btn.setOnClickListener {
+        binding.loginpageBtn.setOnClickListener {
+            //메인화면으로
+        }
+
+        binding.joinBtn.setOnClickListener {
             val intent=Intent(this,JoinActivity::class.java)
             startActivity(intent)
         }
-        find_btn.setOnClickListener {
+        binding.findBtn.setOnClickListener {
             val intent=Intent(this,FindActivity::class.java)
             startActivity(intent)
         }

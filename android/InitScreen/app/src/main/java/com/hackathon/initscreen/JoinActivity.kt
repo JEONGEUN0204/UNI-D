@@ -3,14 +3,17 @@ package com.hackathon.initscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_join.*
+import com.hackathon.initscreen.databinding.ActivityJoinBinding
 
 class JoinActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityJoinBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_join)
+        binding = ActivityJoinBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        gocheck_btn.setOnClickListener {
+        binding.gocheckBtn.setOnClickListener {
             val intent=Intent(this,CheckActivity::class.java)
             startActivity(intent)
         }
