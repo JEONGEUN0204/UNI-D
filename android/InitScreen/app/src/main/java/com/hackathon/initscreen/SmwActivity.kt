@@ -17,5 +17,9 @@ class SmwActivity: AppCompatActivity() {
             val intent = Intent(this,KoreanfoodActivity::class.java)
             startActivity(intent)
         }
+        binding.ivSchoolBack.setOnClickListener {
+            val intent = Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
