@@ -11,8 +11,9 @@
         android:id="@+id/id_view"
         android:layout_width="136dp"
         android:layout_height="62dp"
-        android:text="ID 찾기"
+        android:layout_marginStart="50dp"
         android:fontFamily="@font/dohyeonregular"
+        android:text="ID 찾기"
         android:textColor="@color/point_color2"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,8 +27,9 @@
         android:id="@+id/pw_view"
         android:layout_width="136dp"
         android:layout_height="62dp"
-        android:text="PW 찾기"
+        android:layout_marginStart="50dp"
         android:fontFamily="@font/dohyeonregular"
+        android:text="PW 찾기"
         android:textColor="@color/point_color2"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,12 +97,13 @@
         app:layout_constraintTop_toBottomOf="@+id/find_id_text"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <Button
         android:id="@+id/id_find_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
         android:background="@drawable/btn_style"
         android:fontFamily="@font/dohyeonregular"
         android:text="ID 찾기"
@@ -108,11 +111,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/find_phone_text"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <Button
         android:id="@+id/loginpage_btn"
@@ -136,8 +138,8 @@
         android:id="@+id/loginpage_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
         android:background="@drawable/btn_style"
         android:fontFamily="@font/dohyeonregular"
         android:text="로그인"
@@ -145,19 +147,20 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/find_phone_text"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintTop_toBottomOf="@+id/find_phone_text2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/pw_find_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="PW 찾기"
+        android:layout_marginEnd="100dp"
         android:background="@drawable/btn_style"
         android:fontFamily="@font/dohyeonregular"
+        android:text="PW 찾기"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,5 +169,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/find_phone_text2"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/id_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/id_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_view"
+        app:srcCompat="@drawable/car_repair" />
+
+    <ImageView
+        android:id="@+id/id_image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/pw_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pw_view"
+        app:srcCompat="@drawable/car_repair" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
