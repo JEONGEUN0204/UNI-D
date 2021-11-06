@@ -29,7 +29,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".BaseActivity"/>
         <activity
@@ -42,15 +46,13 @@
         <activity android:name=".MihoActivity"/>
         <activity android:name=".SsangActivity"/>
         <activity android:name=".MypageActivity"/>
+        <activity android:name=".SookActivity"/>
+        <activity android:name=".ThehamActivity"/>
 
         <activity
             android:name=".HomeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".KoreanfoodActivity"/>
         <activity android:name=".SmwActivity"/>
