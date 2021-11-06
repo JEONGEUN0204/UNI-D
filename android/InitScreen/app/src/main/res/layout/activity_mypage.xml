@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb_mypage"
@@ -22,6 +24,21 @@
             android:src="@drawable/icon_back_stroke"/>
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_profile"
+        android:layout_width="430dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="546dp"
+        android:background="@drawable/edge"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_mypage"
+        app:layout_constraintVertical_bias="0.0" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
@@ -39,42 +56,53 @@
         android:id="@+id/tv_nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/store_detail"
         android:text="숙성중님"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_school"
-        app:layout_constraintStart_toEndOf="@id/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_image"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
 
     <TextView
         android:id="@+id/tv_school"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/store_detail"
         android:text="숙명여대"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/profile_image"
-        app:layout_constraintBottom_toBottomOf="@id/profile_image"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_nickname" />
 
     <ImageView
         android:id="@+id/iv_point"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/point"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="@id/tv_school"
-        app:layout_constraintTop_toBottomOf="@id/profile_image"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="32point"
-        android:textSize="20sp"
         android:layout_marginStart="12dp"
+        android:fontFamily="@font/store_detail"
+        android:text="32point"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_point"
         app:layout_constraintStart_toEndOf="@id/iv_point"
-        app:layout_constraintTop_toTopOf="@id/iv_point"
-        app:layout_constraintBottom_toBottomOf="@id/iv_point"/>
+        app:layout_constraintTop_toTopOf="@id/iv_point" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
