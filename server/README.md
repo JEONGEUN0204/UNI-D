@@ -1,12 +1,12 @@
-## 개발환경
+## 개발환경 👨🏽‍💻
 * Windows 10
 * Node.js 16.13.0
 * MySQL 8.0
-## Server 프로젝트 구조
+## Server 프로젝트 구조 🛠
 * models : sequelize 사용에 필요한 데이터 모델을 정의
 * routes : 각 API에 대한 라우팅을 진행
 * config : 서버 구성에 필요한 설정값 세팅
-## Server 환경 세팅
+## Server 환경 세팅 ⚙️
 1. Node.js & MySQL 설치
 2. 해당 repository `git clone` 하기
 3. `server` 폴더로 이동하여 `npm install` 명령어 수행
@@ -14,10 +14,10 @@
 5. `config.json` 파일을 사용자 환경에 맞춰서 세팅
 6. `npm start` 명령어로 서버 실행
 ----
-## SQL 데이터 테이블 설계
+## SQL 데이터 테이블 설계 👨‍🏫
 ![image](https://user-images.githubusercontent.com/13315923/140624569-aebcb6b4-156a-4e00-8dc6-8596b611d14c.png)
 
-## 서버 API 문서 정리
+## 서버 API 문서 정리 📜
 * 회원가입 : `/member` (post)
   * request example
     ```
