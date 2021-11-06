@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/check_num"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".CheckActivity">
 
     <EditText
@@ -19,15 +21,62 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.355" />
 
+    <EditText
+        android:id="@+id/check_num_text"
+        android:layout_width="304dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="인증번호"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_send_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/check_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="인증하기"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/dohyeonregular"
+        android:text="인증"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_num_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/email_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/dohyeonregular"
+        android:text="확인"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_text"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/school_image"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/school" />
 </androidx.constraintlayout.widget.ConstraintLayout>
