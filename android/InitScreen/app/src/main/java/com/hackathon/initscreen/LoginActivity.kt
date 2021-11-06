@@ -15,6 +15,8 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginpageBtn.setOnClickListener {
             //메인화면으로
+            val intent=Intent(this,HomeActivity::class.java)
+            startActivity(intent)
         }
 
         binding.joinBtn.setOnClickListener {
