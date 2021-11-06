@@ -15,6 +15,7 @@
 * `npm start` 명령어로 서버 실행
 ----
 ## SQL 데이터 테이블 설계
+![image](https://user-images.githubusercontent.com/13315923/140624569-aebcb6b4-156a-4e00-8dc6-8596b611d14c.png)
 
 ## 서버 API 문서 정리
 * 회원가입 : `/member` (post)
