@@ -17,5 +17,9 @@ class MihoActivity: AppCompatActivity() {
             val writeintent = Intent(this, CommentWriteActivity::class.java)
             startActivity(writeintent)
         }
+        binding.ivDetailBack.setOnClickListener {
+            val detailinent = Intent(this, KoreanfoodActivity::class.java)
+            startActivity(detailinent)
+        }
     }
 }
