@@ -74,7 +74,7 @@ router.post('/mail/send', function(req, res, next) {
       transport.sendMail({
         from: `Uni-D thon`,
         to: req.body.email,
-        subject: 'XXX서비스 인증 안내입니다.',
+        subject: '캠푸 서비스 인증 안내입니다.',
         text: `귀하의 인증번호 : ${code}`,
         html: `<b>귀하의 인증번호 : ${code}</b>`,
       });
