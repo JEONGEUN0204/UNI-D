@@ -28,7 +28,7 @@ class CommentWriteActivity: BaseActivity() {
         setContentView(binding.root)
 
         binding.ivCommentBack.setOnClickListener {
-            val detailinent = Intent(this, BurgerinActivity::class.java)
+            val detailinent = Intent(this, KoreanfoodActivity::class.java)
             startActivity(detailinent)
         }
 
