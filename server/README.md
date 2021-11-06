@@ -1,4 +1,3 @@
-# Server 부문
 ## 개발환경
 * Windows 10
 * Node.js 16.13.0
