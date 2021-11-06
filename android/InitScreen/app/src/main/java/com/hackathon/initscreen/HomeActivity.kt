@@ -27,5 +27,9 @@ class HomeActivity: AppCompatActivity() {
             val sintent = Intent(this, SkkuActivity::class.java)
             startActivity(sintent)
         }
+        binding.mypageBtn.setOnClickListener {
+            val intent = Intent(this, MypageActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

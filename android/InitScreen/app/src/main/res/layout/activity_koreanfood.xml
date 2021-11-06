@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
@@ -28,10 +29,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:overScrollMode="never"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tb_food_detail">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_food_detail"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -45,7 +48,7 @@
                 android:id="@+id/iv_hanip_detail"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/hanip"
                 app:layout_constraintEnd_toStartOf="@id/tv_hanip_detail"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -56,12 +59,14 @@
                 android:id="@+id/tv_hanip_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/store_name"
                 android:text="한입소반"
+                android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_constraintTop_toTopOf="@id/iv_hanip_detail"
                 app:layout_constraintBottom_toBottomOf="@id/iv_hanip_detail"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/iv_hanip_detail"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toTopOf="@id/iv_hanip_detail" />
 
             <ImageView
                 android:id="@+id/iv_theham_detail"
@@ -76,11 +81,13 @@
                 android:id="@+id/tv_theham_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/store_name"
                 android:text="더함"
+                android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_constraintTop_toTopOf="@id/iv_theham_detail"
                 app:layout_constraintBottom_toBottomOf="@id/iv_theham_detail"
-                app:layout_constraintStart_toStartOf="@id/tv_hanip_detail"/>
+                app:layout_constraintStart_toStartOf="@id/tv_hanip_detail"
+                app:layout_constraintTop_toTopOf="@id/iv_theham_detail" />
 
             <ImageView
                 android:id="@+id/iv_ssang_detail"
@@ -95,11 +102,13 @@
                 android:id="@+id/tv_ssang_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/store_name"
                 android:text="쌍대포"
+                android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_constraintTop_toTopOf="@id/iv_ssang_detail"
                 app:layout_constraintBottom_toBottomOf="@id/iv_ssang_detail"
-                app:layout_constraintStart_toStartOf="@id/tv_theham_detail"/>
+                app:layout_constraintStart_toStartOf="@id/tv_theham_detail"
+                app:layout_constraintTop_toTopOf="@id/iv_ssang_detail" />
 
             <ImageView
                 android:id="@+id/iv_sook_detail"
@@ -114,11 +123,13 @@
                 android:id="@+id/tv_sook_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/store_name"
                 android:text="숙대소반"
+                android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_constraintTop_toTopOf="@id/iv_sook_detail"
                 app:layout_constraintBottom_toBottomOf="@id/iv_sook_detail"
-                app:layout_constraintStart_toStartOf="@id/tv_ssang_detail"/>
+                app:layout_constraintStart_toStartOf="@id/tv_ssang_detail"
+                app:layout_constraintTop_toTopOf="@id/iv_sook_detail" />
 
             <ImageView
                 android:id="@+id/iv_miho_detail"
@@ -133,11 +144,14 @@
                 android:id="@+id/tv_miho_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/store_name"
                 android:text="미호식당"
+                android:textColor="@color/black"
                 android:textSize="24sp"
-                app:layout_constraintTop_toTopOf="@id/iv_miho_detail"
                 app:layout_constraintBottom_toBottomOf="@id/iv_miho_detail"
-                app:layout_constraintStart_toStartOf="@id/tv_sook_detail"/>
+                app:layout_constraintStart_toStartOf="@id/tv_sook_detail"
+                app:layout_constraintTop_toTopOf="@id/iv_miho_detail" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
