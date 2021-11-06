@@ -2,6 +2,7 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const models = require('./models');
+const config = require('./config/config')['mail'];
 const router = express.Router();
 
 router.post('/member', function(req, res, next) {
@@ -11,11 +12,7 @@ router.post('/member', function(req, res, next) {
   models.Member.create(req.body, {
     fields: ['university_id', 'name', 'nickname', 'password', 'telephone', 'point']
   })
-  .then(() => res.status(201).end())
-  .catch(err => {
-    res.body = err.message;
-    res.status(400).end();
-  });
+  .then(() => res.status(201).end());
 });
 
 router.get('/member/:id', function(req, res, next) {
@@ -25,8 +22,7 @@ router.get('/member/:id', function(req, res, next) {
   .then(member => {
     if (member) res.json(member);
     else res.status(404).end();
-  })
-  .catch(res.status(400).end());
+  });
 });
 
 router.put('/member/:id', function(req, res, next) {
@@ -38,8 +34,7 @@ router.put('/member/:id', function(req, res, next) {
   .then(member => {
     if (member) res.status(200).end();
     else res.status(404).end();
-  })
-  .catch(res.status(400).end());
+  });
 });
 
 router.get('/login', function(req, res, next) {
@@ -53,8 +48,7 @@ router.get('/login', function(req, res, next) {
       res.json({'id': member.id});
     }
     else res.status(404).end();
-  })
-  .catch(res.status(400).end());
+  });
 });
 
 router.post('/mail/send', function(req, res, next) {
@@ -64,8 +58,8 @@ router.post('/mail/send', function(req, res, next) {
     port: 587,
     secure: false,
     auth: {
-      user: 'unidthon13@gmail.com',
-      pass: 'unid13!#'
+      user: config.username,
+      pass: config.password
     },
   })
 
