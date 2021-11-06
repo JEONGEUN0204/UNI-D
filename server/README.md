@@ -7,12 +7,12 @@
 * routes : 각 API에 대한 라우팅을 진행
 * config : 서버 구성에 필요한 설정값 세팅
 ## Server 환경 세팅
-* Node.js & MySQL 설치
-* 해당 repository `git clone` 하기
-* `server` 폴더로 이동하여 `npm install` 명령어 수행
-* MySQL에서 `create.sql` 파일을 통해 프로그램 실행에 필요한 테이블을 생성
-* `config.json` 파일을 사용자 환경에 맞춰서 세팅
-* `npm start` 명령어로 서버 실행
+1. Node.js & MySQL 설치
+2. 해당 repository `git clone` 하기
+3. `server` 폴더로 이동하여 `npm install` 명령어 수행
+4. MySQL에서 `create.sql` 파일을 통해 프로그램 실행에 필요한 테이블을 생성
+5. `config.json` 파일을 사용자 환경에 맞춰서 세팅
+6. `npm start` 명령어로 서버 실행
 ----
 ## SQL 데이터 테이블 설계
 ![image](https://user-images.githubusercontent.com/13315923/140624569-aebcb6b4-156a-4e00-8dc6-8596b611d14c.png)
