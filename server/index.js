@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', route);
 
 app.use(function(req, res, next) {
-  res.status(err.status || 500);
+  res.status(500);
   res.render('error');
 });
 
